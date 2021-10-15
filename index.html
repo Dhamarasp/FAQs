@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- My CSS-->
+    <link rel="stylesheet" href="style.css" />
+    
+    
+
+    <title>Landing Page</title>
+  </head>
+  
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background-color: red;">
+
+      <div class="container">
+        <a class="navbar-brand" href="#">PT CAHAYA AGRO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#location">Location</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Jumbotron-->
+    <section id="home">
+      <section class="jumbotrom text-center">
+        <img src="img/cahayaagro.png" alt="PT CAHAYA AGRO" width="200" class="rounded-circle img-thumbnail" />
+        <h1 class="display-4">PT CAHAYA AGRO TEKNIK</h1>
+        <p class="lead">MESIN MENUJU MASA DEPAN</p>
+        
+      </section>
+    </section>
+      
+    
+    <!-- Akhir Jumbotron-->
+
+    <!-- About -->
+    <section id="about">
+      <div class="container1">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>About</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center fs-5 text-center">
+          <div class="col-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quam dolorum esse ut quisquam laborum aspernatur saepe consequuntur, odit iure.</p>
+          </div>
+          <div class="col-4">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia ea, aliquam distinctio earum nostrum sed vitae recusandae deserunt at ab placeat non accusantium perferendis accusamus.</p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <!-- Akhir About -->
+
+    <!-- FAQ -->
+    <body>
+        <!-- Script -->
+      <script>
+        const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+accordionItemHeaders.forEach((accordionItemHeader) => {
+  accordionItemHeader.addEventListener("click", (event) => {
+    // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
+
+    // const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+    // if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
+    //   currentlyActiveAccordionItemHeader.classList.toggle("active");
+    //   currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+    // }
+
+    accordionItemHeader.classList.toggle("active");
+    const accordionItemBody = accordionItemHeader.nextElementSibling;
+    if (accordionItemHeader.classList.contains("active")) {
+      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+    } else {
+      accordionItemBody.style.maxHeight = 0;
+    }
+  });
+});
+
+
+          </script>
+        <!-- Akhir Script-->
+        <section id="faq">
+            <div class="container2">
+              <div class="row text-center mb-3">
+                <div class="col">
+                  <h2>FAQs</h2>
+                </div>
+              </div>
+              <div class="accordion">
+                <div class="accordion-item">
+                  <div class="accordion-item-header">BAGAIMANA DENGAN MASA GARANSI ?</div>
+                  <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                      <p>
+                        <ul>
+                          <li>Saat garansi harap menunjukkan Kartu Garansi/Bukti Transaksi kepada customer service kami</li>
+                        <li>Batas garansi hanya 2 kali dalam 12 bulan untuk setiap mesin</li>
+                        <li>Barang yang sudah melakukan Garansi lebih dari 2 kali harus membayar dengan nominal yang akan dibebankan sesuai dengan biaya jasa dan biaya material mesin</li>
+                      </ul>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-item-header">BAGAIMANA SISTEM PEMBAYARANNYA ?</div>
+                  <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                      <p>Metode Pembayaran yang disediakan melalui Platform CAHAYA AGRO, Antara lain :</p>
+                      <p>ㅤ</p>
+                      <p>1. Tranfer Bank</p>
+                      
+                      <p>
+                        <ul>
+                          <li>BCA : 2260030691 a/n Subambang</li>
+                          <li>BRI : 209401000176309 a/n PT. Cahaya Agro Teknik</li>
+                          <li>MANDIRI : 1410055533350 A/N PT. Cahaya Agro Teknik</li>
+                        </ul>
+                      </p>
+                      <p>ㅤ</p>
+                      <p>2. Kredivo</p>
+                      <p>
+                        <ul>
+                          <li>Lakukan pembayaran sesuai dengan syarat & ketentuan berlaku pada platform Kredivo</li>
+                        </ul>
+                      </p>
+                      <p>ㅤ</p>
+                      <p>3. Akulaku</p>
+                      <p>
+                        <ul>
+                          <li>Lakukan pembayaran sesuai dengan syarat & ketentuan berlaku pada platform Akulaku</li>
+                        </ul>
+                      </p>
+                      <p>ㅤ</p>
+                      <p>4. Alfamart</p>
+                      <p>
+                        <ul>
+                          <li>Silahkan Anda catat kode pembayaran dari website tempat Anda bertransaksi</li>
+                          <li>Kunjungi gerai Alfamart/Alfa Midi/Alfa Express</li>
+                          <li>Kepada Kasir sampaikan maksud anda untuk melakukan pembayaran Telkom Finpay melalui Menu Telkom kemudian Menu Finpay</li>
+                          <li>Sebutkan atau berikan kode pembayaran Finpay yang telah Anda miliki</li>
+                          <li>Kasir akan memasukkan Kode Pembayaran Finpay di aplikasi, dan akan menginformasikan nilai yang akan dibayar</li>
+                          <li>Lakukan pembayaran sesuai dengan nominal yang diinformasikan oleh Kasir</li>
+                          <li>Mintalah bukti pembayaran transaksi FINPAY Anda kepada Kasir</li>
+                          <li>Transaksi pembayaran FINPAY telah selesai dilakukan</li>
+                        </ul>
+                      </p>
+        
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-item-header">APAKAH DAPAT DIKIRIM KE LUAR PULAU ?</div>
+                  <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                      <p>CAHAYA AGRO bekerja sama dengan Partner Ekspedisi Pengiriman Barang Resmi untuk menyediakan pilihan metode pengiriman barang, guna memudahkan setiap transaksi yang berlangsung di Platform CAHAYA AGRO. Adapun Partner Ekspedisi Pengiriman Barang Resmi yang telah bekerja sama dengan CAHAYA AGRO, antara lain :</p>
+                      <p>ㅤ</p>
+                      <p>
+                        <ul>
+                          <li>JNE</li>
+                          <LI>TIKI</LI>
+                          <li>Ninja Xpress</li>
+                          <li>Wahana</li>
+                          <li>Pandu Logistics</li>
+                        </ul> 
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-item-header">APAKAH DAPAT DI REFUND ?</div>
+                  <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                      <p>Berikut syarat dan ketentuan refund yang kami berikan :</p>
+                      <p>ㅤ</p>
+                      <p>
+                        <ul>
+                          <li>Menyertakan bukti foto bagian kerusakan terlebih dahulu kepada pihak customer service kami</li>
+                          <li>Mesin tanpa Sticker Cahaya Agro tidak dapat melakukan Refund</li>
+                          <li>Dana yang akan kembali hanya 80% dari harga mesin dan biaya ongkir, kecuali pembayaran menggunakan Kredivo dana dikembalikan 100% berupa limit bukan dana Cash</li>
+                          <li>Refund akan disetujui apabila mesin mengalami kerusakan hingga 70% (Power dan body mengalami kerusakan)</li>
+                          <li>Masa pengembalian dana akan disetujui jika masih menyimpan bukti transaksi dari Perusahaan kami</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+      
+            
+          </section>
+          
+          <!-- Akhir FAQ -->
+          
+    </body>
+    
+
+    <!-- Alamat -->
+    
+    <section id="location">
+      <div class="location">
+        <h3>Alamat Kami</h3>
+   
+    <br><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.8465390916563!2d112.75628521431!3d-7.258300194760722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f97974f57283%3A0xe9d8a4ac1d2345a2!2sPT.%20Cahaya%20Agro%20Teknik!5e0!3m2!1sid!2sid!4v1634249730615!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></br>
+      </div>
+    
+   </section>
+
+    <!-- Alamat -->
+
+    <!-- Footer -->
+    <footer class="navbar-light text-white text-center pb-5" style="background-color: red;" >
+        <p>Dibuat Oleh <a href="https://www.instagram.com/dhamarasp/" class="text-white fw-bold">Dhamar Susyatama</a></p>
+    </footer>
+    <!-- Akhir Footer -->
+
+    
+   
+    
+    
+  
+  
+</html>
