@@ -1,29 +1,4 @@
-.jumbotron {
-  padding-top: 5rem;
-  background-color: red;
-}
-
-.container1 {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.container2 {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-#projects {
-  background-color: red;
-}
-
-section {
-  padding-top: 100px;
-}
-
-.location {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 
 * {
   margin: 0;
@@ -32,16 +7,19 @@ section {
 }
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #ffff(245, 234, 234);
-  color: black;
-}
-h1 {
-  text-align: center;
-  margin: 2rem 0;
-  font-size: 2.5rem;
+  background-color: #fff;
   color: black;
 }
 
+.container1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.has-text-centered {
+  text-align: center;
+}
 .accordion {
   width: 90%;
   max-width: 1000px;
@@ -83,6 +61,9 @@ h1 {
   line-height: 1.5rem;
   border-top: 1px solid;
   border-image: linear-gradient(to right, transparent, black, transparent) 1;
+}
+.location {
+  text-align: center;
 }
 
 @media (max-width: 767px) {
